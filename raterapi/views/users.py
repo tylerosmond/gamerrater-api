@@ -11,7 +11,7 @@ from django.contrib.auth import authenticate
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["id", "username", "password", "first_name", "last_name"]
+        fields = ["id", "username", "password", "first_name", "last_name", "email"]
         extra_kwargs = {"password": {"write_only": True}}
         # password is required in the request, but won't be sent back in the response
 
@@ -29,6 +29,7 @@ class UserViewSet(viewsets.ViewSet):
                 first_name=serializer.validated_data["first_name"],
                 last_name=serializer.validated_data["last_name"],
                 password=serializer.validated_data["password"],
+                email=serializer.validated_data["email"],
             )
             token, created = Token.objects.get_or_create(user=user)
             return Response({"token": token.key}, status=status.HTTP_201_CREATED)
