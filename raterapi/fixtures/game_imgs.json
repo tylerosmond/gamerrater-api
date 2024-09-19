@@ -1,0 +1,21 @@
+[
+    {
+      "model": "raterapi.gameimg",
+      "pk": 1,
+      "fields": {
+        "game": 1,
+        "user": 1,
+        "img_url": "https://example.com/catan.jpg"
+      }
+    },
+    {
+      "model": "raterapi.gameimg",
+      "pk": 2,
+      "fields": {
+        "game": 2,
+        "user": 2,
+        "img_url": "https://example.com/ticket_to_ride.jpg"
+      }
+    }
+  ]
+  

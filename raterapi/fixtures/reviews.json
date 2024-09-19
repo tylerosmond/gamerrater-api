@@ -1,0 +1,23 @@
+[
+    {
+      "model": "raterapi.review",
+      "pk": 1,
+      "fields": {
+        "game": 1,
+        "user": 1,
+        "content": "Great game with lots of strategic depth.",
+        "created": "2024-09-19T12:34:56Z"
+      }
+    },
+    {
+      "model": "raterapi.review",
+      "pk": 2,
+      "fields": {
+        "game": 2,
+        "user": 2,
+        "content": "Fun for family game night!",
+        "created": "2024-09-19T14:56:23Z"
+      }
+    }
+  ]
+  

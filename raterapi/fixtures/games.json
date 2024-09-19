@@ -1,0 +1,29 @@
+[
+    {
+      "model": "raterapi.game",
+      "pk": 1,
+      "fields": {
+        "title": "Catan",
+        "description": "A resource management and strategy game.",
+        "designer": "Klaus Teuber",
+        "release_year": 1995,
+        "players_number": 4,
+        "play_time": 90,
+        "min_age": 10
+      }
+    },
+    {
+      "model": "raterapi.game",
+      "pk": 2,
+      "fields": {
+        "title": "Ticket to Ride",
+        "description": "Build train routes and compete to control railways across North America.",
+        "designer": "Alan R. Moon",
+        "release_year": 2004,
+        "players_number": 5,
+        "play_time": 60,
+        "min_age": 8
+      }
+    }
+  ]
+  
