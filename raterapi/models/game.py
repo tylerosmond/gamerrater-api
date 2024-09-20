@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 
 class Game(models.Model):
     title = models.CharField(max_length=100, unique=True)
@@ -8,3 +10,6 @@ class Game(models.Model):
     players_number = models.IntegerField()
     play_time = models.IntegerField(help_text="Time in minutes")
     min_age = models.IntegerField(help_text="Minimum age recommendation")
+    categories = models.ManyToManyField(
+        "Category", through="GameCategory", related_name="games"
+    )
